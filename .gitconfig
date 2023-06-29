@@ -1,0 +1,28 @@
+[user]
+	name = Badari Prasad H
+	email = badari.hp@gmail.com
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    unpushed = !GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD) && git log origin/$GIT_CURRENT_BRANCH..$GIT_CURRENT_BRANCH --oneline
+    co = checkout
+    ci = commit
+    cia = commit -a
+    save = commit -m
+    resave = commit --amend
+    st = status -s
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    logs = log --pretty=format:"%C(yellow)%h\\ %ad\\ %Cgreen%s%Cblue\\ [%cn]" --decorate --date=short
+    ll = log --pretty='format:%C(yellow)%h| %ad| %Cgreen%s|%Creset%Cblue [%cn] |%Cred%d|' --decorate --date=short
+    #logs = log --oneline
+    stashes = stash list
+    stpop = stash pop
+    graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
+    history = log -10 --format=format:'%Cgreen%h %Creset• %s (%aN, %ar)'
+    unstash = stash pop
+    lschanges = diff --name-only
+    untracked = ls-files --others --exclude-standard
+    allchanges = ls-files --others -m  --exclude-stand
+
