@@ -241,7 +241,7 @@ Give credit here.
 
 
 ## Contact
-Created by [@saurabhbhargava6 and ] - feel free to contact us!
+Created by [@saurabhbhargava6 and @badarihp] - feel free to contact us!
 
 
 <!-- Optional -->
